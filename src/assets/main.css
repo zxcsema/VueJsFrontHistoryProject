@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+body {
+  background-color: rgb(247 254 231);
+}
+input[type='range'] {
+  -webkit-appearance: none; /* Отключаем стандартный стиль */
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(240, 224, 200); /* Бежевый цвет */
+  border: 2px solid #aaa;
+  margin-top: +4px; /* Чтобы совместить с линией */
+  -webkit-transition: background 0.3s; /* For Safari and older browsers */
+  -moz-transition: background 0.3s; /* For Firefox */
+  -o-transition: background 0.3s; /* For Opera */
+  transition: background 0.3s;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: rgb(230, 210, 180);
+}
+
+/* Firefox */
+input[type='range']::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(240, 224, 200);
+  border: 2px solid #aaa;
+  transition: background 0.3s;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+  background: rgb(230, 210, 180);
+}
+
+/* For completeness - IE */
+input[type='range']::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(240, 224, 200);
+  border: 2px solid #aaa;
+}
