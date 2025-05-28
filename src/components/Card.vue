@@ -16,7 +16,7 @@ const router = useRouter()
 
 const goToDetails = () => {
   console.log('ID:', props.id)
-  router.push(`/sneakers/${props.id}`) // Используем props.id
+  router.push(`/person/${props.id}`) // Используем props.id
 }
 </script>
 
@@ -39,6 +39,6 @@ const goToDetails = () => {
 }
 
 .font-cursive {
-  font-family: 'Cursive', 'Brush Script MT', cursive; /* Каллиграфический шрифт */
+  font-style: italic; /* Курсив для большей незаметности */ /* Каллиграфический шрифт */
 }
 </style>

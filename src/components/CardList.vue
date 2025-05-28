@@ -12,8 +12,8 @@ defineProps({
       v-for="item in items"
       :key="item.id"
       :id="item.id"
-      :title="item.title"
-      :imageUrl="item.imageUrl"
+      :title="item.full_name"
+      :imageUrl="`http://historical-social-network.ru/api/persons/${item.id}/avatar?timestamp=${Date.now()}`"
       :price="item.price"
     />
   </div>

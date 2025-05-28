@@ -5,10 +5,11 @@ import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 import App from './App.vue'
 import Home from './pages/Home.vue'
 import SneakerDetails from './pages/PersonDetails.vue'
+import PersonDetails from './pages/PersonDetails.vue'
 
 const routes = [
   { path: '/', name: 'home', component: Home },
-  { path: '/sneakers/:id', name: 'sneakerDetails', component: SneakerDetails, props: true }, // Изменён маршрут
+  { path: '/person/:id', name: 'sneakerDetails', component: PersonDetails, props: true }, // Изменён маршрут
 ]
 
 const router = createRouter({
